@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+	<html>
+	<meta charset="UTF-8">
+	<head>
+		<meta name="robots" content="noindex">
+		<title>Taskly, the Project Management App - Ian Alton's Portfolio</title>
+		<!--Import Icon Fonts-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="main.css" media="screen,projection"/>
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113947172-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-113947172-1');
+		</script>
+	</head>
+
+	<body>
+		
+		<nav class="blue darken-4">
+			<a href="#" data-activates="side-navigation" class="button-collapse"><i class="material-icons">menu</i></a>
+			<div class="nav-wrapper container">
+				<a href="index.html#" class="brand-logo">Ian Alton</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="index.html#">Home</a></li>
+					<li><a href="index.html#about">About Me</a></li>
+					<li><a href="index.html#portfolio">Work Samples</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+				<ul class="side-nav" id="side-navigation">
+					<li>
+						<div class="user-view">
+							<div class="background">
+								<img src="on-the-trail.jpeg" class="responsive-img">
+							</div>
+							<a href="mailto:ipalton@gmail.com"><img class="circle" src="picture-of-me.png"></a>
+							<a href="mailto:ipalton@gmail.com"><span class="white-text name">Ian Alton</span></a>
+							<a href="mailto:ipalton@gmail.com"><span class="white-text email">ipalton@gmail.com</span></a>
+					</div>
+					</li>
+					<li class="close-sidebar-on-click"><a href="index.html#">Home</a></li>
+					<li class="close-sidebar-on-click"><a href="index.html#about">About Me</a></li>
+					<li class="close-sidebar-on-click"><a href="index.html#portfolio">Work Samples</a></li>
+					<li class="close-sidebar-on-click"><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="row">
+			<div class="col s12 hero blue darken-3">
+			</div>
+		</div>
+
+		<div class="row container hero-statement">
+			<div class="col s12 m12">
+				<div class="card horizontal hide-on-med-and-down">
+					<div class="card-image">
+						<img src="taskly/taskly.png">
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<h1>Project Management App</h1>
+							<p>Taskly is a project management app that helps you organize your projects and tasks whatever way makes sense to you. I designed Taskly from scratch, through market research, persona development, requirements gathering, prototyping, and user testing.</p>
+						</div>
+					</div>
+				</div>						
+						
+
+				<div class="card hide-on-large-only">
+					<div class="card-stacked">
+						<div class="card-image">
+								<img src="taskly/taskly.png">
+							</div>
+						<div class="card-content center-align">
+							<h1>Project Management App</h1>
+							<p>Taskly is a project management app that helps you organize your projects and tasks whatever way makes sense to you. I designed Taskly from scratch, through market research, persona development, requirements gathering, prototyping, and user testing.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row container">
+			<h1>1. Competitor Analysis</h1>
+			<div class="col l6">
+				<p>I evaluated two of the top project management apps on the market (Basecamp and Asana), and a third, less-well-known option (TeamWeek). After using their products and evaluating their websites, marketing, and business, I was able to answer three questions.</p>
+				<ul class="browser-default">
+					<li>What is Taskly's industry?</li>
+					<li>Who are my potential customers?</li>
+					<li>What needs do customers have and how can I fulfill those needs?</li>
+				</ul>
+			</div>
+      		<div class="col l6">
+      			<p class="caption">Competitor analysis of Basecamp, Asana, and TeamWeek.</p>
+				<img src="taskly/taskly-competitor-analysis.png" alt="" class="responsive-img border">
+      		</div>
+      	</div>
+
+      	<div class="row container">
+      		<h1>2. User Research</h1>
+			<div class="col l6">
+				<p>I needed to understand potential users and their specific needs before I could define a minimum viable product, so I surveyed and interviewed people who indicated they used project management tools. I asked the following questions:</p>
+				<ol class="browser-default">
+					<li>Does existing project management software allow you to control and adjust your priorities in a way that feels natural and useful?</li>
+					<li>Is current project management software responsive when unexpected priorities arise?</li>
+					<li>Does current project management software allow you to view projects, tasks, and responsibilities the way you want to?</li>
+					<li>Does current project management software make it easy for projects or tasks to change size or scope part-way through?</li>
+					<li>If you could change something about project management software, what would it be?</li>
+				</ol>
+			</div>
+      		<div class="col l6">
+      			<p class="caption">A survey question demonstrating great disagreement among respondants.</p>
+				<img src="taskly/survey-question-2.png" alt="" class="responsive-img border">
+      		</div>
+      	</div>
+
+      	<div class="row container">
+			<div class="col l6">
+				<p>The survey yielded interesting results.</p>
+				<ul class="browser-default">
+					<li>More than half of respondents said they could control and adjust priorities in a way that felt natural and useful. This was interesting, as there were actually few prioritization tools available in these apps.</li>
+					<li>Responses were mixed when respondents were asking if project management software was responsive when unexpected priorities arose.</li>
+					<li>Nearly a quarter of users felt that project management software did not allow them to view things the way they wanted to.</li>
+					<li>Responses were mixed, but weighted toward no, when I asked if things could change scope easily.</li>
+					<li>Multiple respondents requested newsfeeds/dashboards to help them grasp their projects and progress.</li>
+					<li>Multiple respondents requested a reduction in complexity, while multiple others requested more customization.</li>
+				</ul>
+			</div>
+      		<div class="col l6">
+      			<p class="caption">A survey question with polarized results.</p>
+				<img src="taskly/survey-question-4.png" alt="" class="responsive-img border">
+      		</div>
+      	</div>
+
+      	<div class="row container">
+      		<h1>3. Personas</h1>
+			<div class="col l6">
+				<p>With my initial research done, I could begin to create personas and think about what should go into a minimum viable product.</p>
+				<ul class="browser-default">
+					<li><strong>I defined three personas</strong>. I wanted the design process to constantly remember that we were designing for real people who had real goals and worked in a variety of circumstances and environments.</li>
+					<li><strong>I created task models and customer journey maps</strong>.</li>
+					<li><strong>I defined a minimum viable product</strong>. I wasn't going to make the mistakes of some startups and overcommit without doing enough research. I needed firm goals on which I could actually deliver, and I needed to be lean so I could pivot if something didn't work.</li>
+				</ul>
+			</div>
+      		<div class="col l6">
+      			<p class="caption">A persona representing a Taskly user. It focuses on her responsibilities and circumstances.</p>
+				<img src="taskly/taskly-persona.png" alt="A User Persona" class="responsive-img border">
+				<p class="caption">A task model, highighting the complex user thought processes that may go into a single app flow.</p>
+				<img src="taskly/taskly-task-model.png" alt="A Task Model" class="responsive-img border">
+      		</div>
+      	</div>
+
+      	<div class="row container">
+      		<h1>4. Information Architecture</h1>
+			<div class="col l6">
+				<p>Because designers can't represent their users, I needed to understand the mental models of my audience.</p>
+				<ul class="browser-default">
+					<li>I used card-sorting to see how potential users related to concepts like projects, tasks, chat, people, viewing, sorting, etc.</li>
+					<li>I defined a sitemap for the app using the results of the card sorting and other user research.</li>
+					<li>I evaluated the SEO of my competitors and wrote web content that used some of my competitors' top keywords. While this wouldn't strongly influence the app, it would ensure our website was more visible in search results.</li>
+				</ul>
+			</div>
+      		<div class="col l6">
+      			<p class="caption">A similarity matrix showing the strength of the relationship between each card.</p>
+				<img src="taskly/ia-card-sort.png" alt="A similarity matrix" class="responsive-img border">
+				<p class="caption">A sitemap showing the basic blueprint for the app.</p>
+				<img src="taskly/sitemap.png" alt="A similarity matrix" class="responsive-img border">
+      		</div>
+      	</div>
+
+      	<div class="row container">
+      		<h1>5. Paper Prototyping</h1>
+			<div class="col l6">
+				<p>One of the keys to a lean, iterative design process involves minimizing wasted time. I started with quick pen-and-paper thumbnails to visualize my ideas and solve problems early on. Once I was happy with the general idea, I sketched more polished flows from which I could start to build a prototype.</p>
+			</div>
+      		<div class="col l6">
+      			<p class="caption">Unpolished thumbnails breathe life into design ideas and start the prototyping process.</p>
+				<img src="taskly/thumbnails-1.jpg" alt="Quick thumbnail sketches" class="responsive-img border">
+      		</div>
+      	</div>
+      	<div class="row container">
+			<div class="col l6">
+				<p class="caption">A more polished sketch showing the flow for switching to a Calendar view type.</p>
+				<img src="taskly/prototype-1.jpg" alt="A mid-fidelity paper prototype" class="responsive-img border">
+			</div>
+      		<div class="col l6">
+      			<p class="caption">A more polished sketch showing the flow for switching to a Gantt Chart view type.</p>
+				<img src="taskly/prototype-2.jpg" alt="A mid-fidelity paper prototype" class="responsive-img border">
+      		</div>
+      	</div>
+
+      	<div class="row container">
+      		<h1>6. Wireframes and User Testing</h1>
+			<div class="col s12 l6">
+				<p>As the screens and flows within the app solidified, I created digital wireframes for all my different screen types using UXPin. Then I used InVision to test key workflows with potential users.</p>
+				<p>The first round of testing didn't expose overt usability problems with the app, but it did reveal that the test might have been invalid. Projects in the list had different shades, which incorrectly emphasized darker elements of the wireframe that were not relevant to the flow being tested, and distracted users from their objectives.</p>
+			</div>
+      		<div class="col s12 l6">
+      			<p class="caption">A desktop wireframe showing a list of projects.</p>
+				<img src="taskly/wireframe-first-round-desktop.png" alt="A mid-fidelity digital prototype" class="responsive-img border">
+      		</div>
+      	</div>
+
+      	<div class="row container">
+			<div class="col s12 l6">
+			</div>
+      		<div class="col s6 m6 l3">
+      			<p class="caption">A mobile wireframe showing a list of tasks.</p>
+				<img src="taskly/wireframe-first-round-mobile.png" alt="A mid-fidelity digital prototype" class="responsive-img border">
+      		</div>
+      		<div class="col s6 m6 l3">
+      			<p class="caption">The same list of projects in a calendar view.</p>
+				<img src="taskly/wireframe-first-round-mobile-calendar.png" alt="A mid-fidelity digital prototype" class="responsive-img border">
+      		</div>
+      	</div>
+
+      	<div class="row container">
+			<div class="col l6">
+				<p>Removing the shading from the projects list yielded a more effective test. Users were highly successful when given their tasks, but there was one important takeaway. I had to add labels to icons that did not have them, as users distrusted their instincts about icons represented. Combining icons with text is always more information-rich.</p>
+
+				<ul>
+					<li><i class="tiny material-icons">file_download</i> <a href="taskly/digital-wireframes.pdf">Sample Flow Concept - Creating a New Project</a></li>
+					<li><i class="tiny material-icons">exit_to_app</i> <a href="https://invis.io/SY68D6HD6" target="_blank">InVision Mobile Wireframe - Creating a New Project</a></li>
+					<li><i class="tiny material-icons">exit_to_app</i> <a href="https://invis.io/FK68D7T5A" target="_blank">InVision Tablet Wireframe - Creating a New Project</a></li>
+					<li><i class="tiny material-icons">exit_to_app</i> <a href="https://invis.io/3K68D6FPN" target="_blank">InVision Desktop Wireframe - Creating a New Project</a></li>
+				</ul>
+
+			</div>
+			<div class="col s6 l3">
+				<p class="caption">Updated mobile wireframe showing a list of projects.</p>
+				<img src="taskly/wireframe-second-round.png" alt="A mid-fidelity digital prototype" class="responsive-img border">
+			</div>
+      		<div class="col s6 l3">
+      			<p class="caption">Updated mobile wireframe showing a list of projects.</p>
+				<img src="taskly/wireframe-second-round-calendar.png" alt="A mid-fidelity digital prototype" class="responsive-img border">
+      		</div>
+      	</div>
+
+      	<div class="row container">
+      		<div class="col s12 l6">
+      		</div>
+      		<div class="col s12 l6">
+      			<p class="caption">A desktop wireframe showing a list of project in a Gantt chart.</p>
+				<img src="taskly/wireframe-second-round-gantt.png" alt="A mid-fidelity digital prototype" class="responsive-img border">
+      		</div>
+      	</div>
+
+      	<div class="row container">
+      		<h1>7. The Initial High-Fidelity Prototype</h1>
+			<div class="col m6">
+				<p>With my initial hypotheses confirmed or corrected, it was time to build a high-fidelity prototype. I defined a color-palette, chose appropriate fonts, created a style template, some swatches, a UI kit, and icons. Then, I prototyped in Axure RP 8.</p>
+
+				<p>However, I wasn't happy with Taskly. It was okay, but it lacked the modern polish people expected from a UI. The prototype was usable in the sense that people could accomplish tasks, but Taskly wasn't enjoyable to use, and there's more to user experience than usability alone.</p>
+			</div>
+      		<div class="col m6">
+      			<p class="caption">My initial UI kit was OK, but it didn't have a level of polish I was happy with.</p>
+				<img src="taskly/taskly-first-ui-horizontal.png" alt="First Taskly UI Kit" class="responsive-img border">
+      		</div>
+      	</div>
+
+      	<div class="row container">
+      		<h1>8. A Better High-Fidelity Prototype</h1>
+			<div class="col m6">
+				<p>I needed a better UI. I had become interested in Google's Material Design language, so it was a good opportunity to learn the language better while also improving Taskly. <!--Material Design is very specific on many aspects of design, so I invested in Marc Oliver's <a href="http://wearebridge.co/ux-tools/Axure-MATERIAL-UI-Kit/home.html">library of Material Design widgets</a>. It provides common Material UI widgets like cards, selectors, and buttons, minimzing the time I spent building my own widgets.--></p>
+			</div>
+			
+			<div class="col m6">
+				<p class="caption">A mockup that shows a Taskly user's profile page on a mobile device.</p>
+				<img src="taskly/taskly.png" alt="Taskly Mockup" class="responsive-img border">
+			</div>
+      	</div>
+
+      	<div class="row container">
+      		<h1>9. Final Presentation</h1>
+			<div class="col s12 m4">
+				<p>I made some final redesigns on the app based on the AARRR (Acquisition, Activation, Retention, Referral, Revenue) model.</p>
+			</div>
+			<div class="col s12 m4">
+				<p>I created a style guide that could help future designers and developers preserve consistency.</p>
+			</div>
+			<div class="col s12 m4">
+				<p>I made some realistic mockups to demonstrate the app's appearance on some common devices.</p>
+			</div>
+			
+      	</div>
+
+      	<div class="row container">
+			<div class="col l6">
+				<a class="waves-effect waves-light btn" style="margin: 25px auto;" href="https://plusse.axshare.com/sign_in.html" target="_blank">Launch The Prototype</a>
+			</div>
+      	</div>
+
+      	<div class="row container">
+			<div class="col l6">
+				<p class="caption">A list of tasks, viewed on a laptop.</p>
+				<img src="taskly/taskly-task-list-laptop.png" alt="Taskly Mockup" class="responsive-img border">
+			</div>
+			<div class="col l6">
+				<p class="caption">The form to create a new project, viewed on a mobile phone.</p>
+				<img src="taskly/taskly-add-project-mobile.png" alt="Taskly Mockup" class="responsive-img border">
+			</div>
+      	</div>
+
+      	<div class="row container">
+			<div class="col l12">
+				<p class="caption">Taskly's dashboard, shown on a laptop and a mobile phone to highlight the responsive nature of the app.</p>
+				<img src="taskly/taskly-dashboard-devices.png" alt="Taskly Mockup" class="responsive-img border">
+			</div>
+      	</div>
+
+		
+
+		<footer class="page-footer blue darken-4">
+			<div class="container">
+				<div class="row">
+					<div class="col l4 s12">
+						<ul>
+							<li><a class="grey-text text-lighten-3" href="index.html#">Home</a></li>
+							<li><a class="grey-text text-lighten-3" href="index.html#about">About</a></li>
+							<li><a class="grey-text text-lighten-3" href="index.html#portfolio">Work Samples</a></li>
+							<li><a class="grey-text text-lighten-3" href="index.html#contact">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col l8 s12">
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					<a href="https://twitter.com/ipalton"><i class="im im-twitter right"></i></a>
+					<a href="https://www.linkedin.com/in/ipalton/"><i class="im im-linkedin right"></i></a>
+				</div>
+			</div>
+		</footer>
+						
+						
+					
+
+
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script>
+			$(".button-collapse").sideNav({
+				menuWidth: 300, // Default is 300
+				edge: 'left', // Choose the horizontal origin
+				closeOnClick: false, // using custom function instead
+				draggable: true, // Choose whether you can drag to open on touch screens
+			});
+			$('.modal').modal();
+			$( ".close-sidebar-on-click" ).click(function() {
+				$('.button-collapse').sideNav('hide');
+			});
+		</script>
+	</body>
+	</html>

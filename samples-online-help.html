@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+	<html>
+	<meta charset="UTF-8">
+	<head>
+		<meta name="robots" content="noindex">
+		<title>Online Help Redesign - Ian Alton's Portfolio</title>
+		<!--Import Icon Fonts-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="main.css" media="screen,projection"/>
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113947172-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-113947172-1');
+		</script>
+	</head>
+
+	<body>
+		
+		<nav class="blue darken-4">
+			<a href="#" data-activates="side-navigation" class="button-collapse"><i class="material-icons">menu</i></a>
+			<div class="nav-wrapper container">
+				<a href="index.html#" class="brand-logo">Ian Alton</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="index.html#">Home</a></li>
+					<li><a href="index.html#about">About Me</a></li>
+					<li><a href="index.html#portfolio">Work Samples</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+				<ul class="side-nav" id="side-navigation">
+					<li>
+						<div class="user-view">
+							<div class="background">
+								<img src="on-the-trail.jpeg" class="responsive-img">
+							</div>
+							<a href="mailto:ipalton@gmail.com"><img class="circle" src="picture-of-me.png"></a>
+							<a href="mailto:ipalton@gmail.com"><span class="white-text name">Ian Alton</span></a>
+							<a href="mailto:ipalton@gmail.com"><span class="white-text email">ipalton@gmail.com</span></a>
+					</div>
+					</li>
+					<li class="close-sidebar-on-click"><a href="index.html#">Home</a></li>
+					<li class="close-sidebar-on-click"><a href="index.html#about">About Me</a></li>
+					<li class="close-sidebar-on-click"><a href="index.html#portfolio">Work Samples</a></li>
+					<li class="close-sidebar-on-click"><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="row">
+			<div class="col s12 hero blue darken-3">
+			</div>
+		</div>
+
+		<div class="row container hero-statement">
+			<div class="col s12 m12">
+				<div class="card horizontal hide-on-med-and-down">
+					<div class="card-image">
+						<img src="online-help-redesign/online-help-pretty.png">
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<h1>Online Help Redesign</h1>
+							<p class="flow-text">Geoscientists use this suite every day to understand the earth's subsurface. However, end users and support teams could not find the information they needed in the product's documentation.</p>
+						</div>
+					</div>
+				</div>						
+						
+
+				<div class="card hide-on-large-only">
+					<div class="card-stacked">
+						<div class="card-image">
+								<img src="online-help-redesign/online-help-pretty.png">
+							</div>
+						<div class="card-content center-align">
+							<h1>Online Help Redesign</h1>
+							<p class="flow-text">Geoscientists use this suite every day to understand the earth's subsurface. However, end users and support teams could not find the information they needed in the product's documentation.</p>
+						</div>
+						<!--<div class="card-action">
+							<a href="#">This is a link</a>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row container">
+			<div class="col s12">
+
+				<p>Please note that, due to a non-disclosure agreement, I am unable to provide real screenshots or specific information about some elements of this project.</p>
+
+				<h1>The Problem</h1>
+
+				<p>Geoscientists use this suite of applications every day to understand the earth's subsurface, but users and support staff could not find the information they needed in the product documentation.</p>
+
+				<ul class="browser-default">
+					<li>Search did not return relevant results.</li>
+					<li>Information was not organized and labeled in a way that made sense to users.</li>
+					<li>Many topics were based around UI elements and did not reflect the actual questions users had.</li>
+				</ul>
+
+				<p>There were also internal governance issues.</p>
+
+				<ul class="browser-default">
+					<li>Content, design, and code were deeply intertwined.</li>
+					<li>No infrastructure existed for content reuse or responsive content.</li>
+					<li>Help site used frames and other outdated technology.</li>
+				</ul>
+
+				<!--<h1>Constraints and Limitations</h1>
+
+				<p>The business strategy prioritized protecting intellectual property, restricting how information could be consumed.</p>
+				
+				<ul class="browser-default">
+					<li>No documentation could be published to the web or indexed by search engines like Google.</li>
+					<li>Documentation was only accessible within the application itself, using its built-in web browser that mimicked Internet Explorer 7.</li>
+				</ul>-->
+
+				<h1>The Solution</h1>
+
+				<p>I successfully made the case to the team that many of our content problems could be traced to a single, fatal mistake: everything was designed around the documentation team's vocabulary and mental models. To resolve the content problems, we needed to shift our focus to our users.</p>
+
+				<p>To resolve our internal governance issues, we could leverage software the company already had licenses for, but wasn't using.</p>
+
+			</div>
+		</div>
+
+		
+		<div class="row container">
+			<div class="col">
+				<h2>Tools Upgrade</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col l6">
+				<p>We converted to a popular help authoring tool with HTML5 support. This tool allowed us to implement a superior search engine, master pages, reusable content snippets, and responsive content features, which would help us solve the bulk of our internal governance issues.</p>
+			</div>
+			<div class="col l6">
+			</div>
+		</div>
+
+		<div class="row container">
+			<div class="col">
+				<h2>User Research and Testing</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col l6">
+				<p>Our first research activity was to put people in a room for a live usability test of our existing product documentation. This testing exposed some usability problems with the system, a few of which were easily solved in our existing framework.</p>
+
+				<p>Next, we interviewed our support team and various stakeholders in small groups to understand their needs and pain points. We had an opportunity to help them help our customers.</p>
+
+				<p>From here, we used card sorting and tree testing to learn how people used our content and to validate new iterations.</p>
+
+				<ul class="browser-default">
+					<li>Our initial card sort explored relationships between different elements of the suite and general concepts at the highest level. We needed to know which programs and concepts were related most strongly. The test results yielded assets like a similarity matrix, common groupings, and dendrograms, which helped us design a high-level information hierarchy.</li>
+					<li>Our second round of card sorting drilled down into specifics. We needed to know how people conceived of the various buttons and functions that appeared commonly throughout the suite. This gave us a framework to start designing content within each of the applications.</li>
+					<li>With card sorting complete, we designed an information hierarchy for some of our sections and used tree testing to validate the designs. Some sections tested extremely well. However, some tested abysmally. These failures were important, and they reinforced the importance of these tests.</li>
+					<li>We continued to do smaller card sorts and tree tests as we progressed through our content. Sometimes these tests were extremely limited in scope and participation, but they gave us quick feedback, and any testing is better than none.</li>
+				</ul>
+
+			</div>
+			<div class="col l6">
+				<p class="caption">A similarity matrix showing the strength of the relationship between each card.</p>
+				<img src="online-help-redesign/similarity-matrix.png" alt="" class="responsive-img border">
+				<p class="caption">A dendrogram illustrating the percent of users who agree with a particular grouping.</p>
+				<img src="online-help-redesign/dendrogram.png" alt="" class="responsive-img border">
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col">
+				<p class="caption">An instance where every test-taker failed or abandoned the task. Results like this helped us isolate problems with our information structure.</p>
+				<img src="online-help-redesign/tree-test-results.png" alt="" class="responsive-img border">
+			</div>
+		</div>
+
+		<!--<div class="row container">
+			<div class="col">
+				<h2>Technology Upgrade</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col l6">
+				<p>We could not continue using Internet Explorer 7. I made configuration changes that forced the application's web browser to use a modern rendering engine. There were several ways to accomplish this, but I chose the only solution that required no work from the development team and no action on the part of our users. I had unlocked HTML5 and CSS3, which meant we could now choose solutions we actually needed rather than the ones that fit a technological restriction.</p>
+			</div>
+			<div class="col l6">
+			</div>
+		</div>-->
+
+		<div class="row container">
+			<div class="col">
+				<h2>UI Redesign</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col l6">
+				<p>To replace the aged frames-based layout, and resolve remaining usability complaints that lingered from the old system, I designed a new HTML5/CSS3 website built on a popular front-end framework. I focused on a minimalist UI that emulated the UIs of popular web browsers like Firefox and Chrome. This helped make the design intuitive, and ensured our content could take center stage in the user experience.</p>
+			</div>
+			<div class="col l6">
+				<p class="caption">A simple interface guides the user into action.</p>
+				<img src="online-help-redesign/online-help-main-page.png" class="responsive-img">
+			</div>
+		</div>
+
+		<div class="row container">
+			<div class="col">
+				<h2>Content Redesign</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col l6">
+				<p>The software we supported was undergoing a massive change that would invalidate some traditional content models and groupings. Supporting the new version was not as simple as updating our steps and screen captures.</p>
+
+				<p>We had ample evidence that the structure and organization of some of our existing content was not useful to our target audience. Moreover, we had already accumulated a body of data that illuminated a more effective structure and format.</p>
+
+				<p>After taking a content inventory and discussing the user testing with my team, we made the difficult decision to retire the majority of our content and start fresh.</p>
+			</div>
+			<div class="col l6">
+
+				<p class="caption">Before writing anything, we planned our information hierarchy in great detail, constantly focused on how the various components fit together and how tasks were related.</p>
+				<img src="online-help-redesign/structure.png" alt="" class="responsive-img border">
+				
+			</div>
+		</div>
+
+		<div class="row container">
+			<div class="col">
+				<h2>Forming New Habits</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col l6">
+				<p>The content team consisted entirely of junior-level writers. We had trained them into a way of thinking and writing that did not match our users' needs. That had to be undone.</p>
+
+				<ul class="browser-default">
+					<li>I emphasized concepts like information architecture, labeling, and information scent.</li>
+					<li>I encouraged the team to prioritize content design, spend more time planning, and think about the impact different flows and contexts could have on their content before writing it.</li>
+					<li>I worked with the team extensively to rewrite our legacy content, framing topics around user scenarios &mdash; discreet, simple goals that reflected our users’ apparent information needs based on our extensive research and data.</li>
+				</ul>
+
+				<p>The result was well-labeled text and support from icons. Since content was designed around the results of our user research, it became substantially easier to navigate.</p>
+			</div>
+			<div class="col l6">
+				<p class="caption">Well-labeled categories supported by icons and descriptive text funnel users into the right places.</p>
+				<img src="online-help-redesign/online-help-layout.png" class="responsive-img">
+			</div>
+		</div>
+
+		<div class="row container">
+			<div class="col">
+				<h2>Search Improvements</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col l6">
+				<p>Our data suggested search was a major component in the way people looked for information. We improved search in iterations using metadata, keywords, and human-curated results to maximize relevancy. Each revision gave us an opportunity to return to the data and identify what worked and what didn't.</p>
+				<ul class="browser-default">
+					<li>Human-curated search results allow the team to select specific answers for common searches, ensuring the most important queries produce the best answers.</li>
+					<li>Organic search results are typical, but provide highly relevant results thanks to keyword optimization and metadata like synonyms and ignore words.</li>
+				</ul>
+			</div>
+			<div class="col l6">
+				<p class="caption">Human-curated search results allow writers to answer specific queries manually. Sometimes, we used this feature to insert jokes and memes to engage support teams and lighten their mood.</p>
+				<img src="online-help-redesign/curated-results.png" class="responsive-img">
+				<p class="caption">Organic search results are machine-generated, based on the user's query.</p>
+				<img src="online-help-redesign/organic-search-results.png" class="responsive-img">
+			</div>
+		</div>
+
+		<div class="row container">
+			<div class="col">
+				<h2>What Didn't Go Well</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col">
+				<p>Few projects go perfectly, and this one was no exception.</p>
+
+				<ul class="browser-default">
+					<li>Our help authoring tool started to show cracks in its foundation quickly. It was not designed to support some of the extensive customization we required, so we continued to lack a truly integrated development environment and had to juggle tools. Moreover, the authoring tool's support for multi-author projects, which seemed promising in evaluation, was abysmal when deployed to a real work environment, and required us to implement some significant workarounds.</li>
+					<li>We did not have enough time to fully document the suite before release, which continued to see significant development in the weeks leading up to, and following, release. We anticipated this well in advance and prioritized strategically important content, but nonetheless went to market with some areas of our content insufficient for our users' needs.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row container">
+			<div class="col">
+				<h1>Outcome and Legacy</h1>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col">
+				<p>This project had some important takeaways.</p>
+
+				<ul class="browser-default">
+					<li>We improved task success and directness when using the product documentation, and improved the perception of its value among our users and support teams. Colleagues frequently commented they were comfortable using documentation to help them answer customer questions, and hadn't felt this way before. Customers were often happy to meet me and mentioned having used documentation before.</li>
+					<li>Our process introduced the company to the idea of user testing.</li>
+					<li>The results of our user testing helped the design team build the layout of some of the application's tools.</li>
+					<li>We learned to stop thinking about product documentation as "done" or "not done". We started thinking about it as a constantly evolving system that could be tweaked and improved over time. The metric for success became how effectively the system responded our users' needs and behaviors, not how much content was present.</li>
+					<li>We positioned ourselves to collect the ongoing feedback we needed to make iterative, ongoing improvements that would make the system more relevant as time went on.</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<footer class="page-footer blue darken-4">
+			<div class="container">
+				<div class="row">
+					<div class="col l4 s12">
+						<ul>
+							<li><a class="grey-text text-lighten-3" href="index.html#">Home</a></li>
+							<li><a class="grey-text text-lighten-3" href="index.html#about">About</a></li>
+							<li><a class="grey-text text-lighten-3" href="index.html#portfolio">Work Samples</a></li>
+							<li><a class="grey-text text-lighten-3" href="index.html#contact">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col l8 s12">
+						
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					<a href="https://twitter.com/ipalton"><i class="im im-twitter right"></i></a>
+					<a href="https://www.linkedin.com/in/ipalton/"><i class="im im-linkedin right"></i></a>
+				</div>
+			</div>
+		</footer>		
+
+
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script>
+			$(".button-collapse").sideNav({
+				menuWidth: 300, // Default is 300
+				edge: 'left', // Choose the horizontal origin
+				closeOnClick: false, // using custom function instead
+				draggable: true, // Choose whether you can drag to open on touch screens
+			});
+			$('.modal').modal();
+			$( ".close-sidebar-on-click" ).click(function() {
+				$('.button-collapse').sideNav('hide');
+			});
+		</script>
+	</body>
+	</html>

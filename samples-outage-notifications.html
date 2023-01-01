@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+	<html>
+	<meta charset="UTF-8">
+	<head>
+		<meta name="robots" content="noindex">
+		<title>Outage Notification System - Ian Alton's Portfolio</title>
+		<!--Import Icon Fonts-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="main.css" media="screen,projection"/>
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113947172-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-113947172-1');
+		</script>
+	</head>
+
+	<body>
+		
+		<nav class="blue darken-4">
+			<a href="#" data-activates="side-navigation" class="button-collapse"><i class="material-icons">menu</i></a>
+			<div class="nav-wrapper container">
+				<a href="index.html#" class="brand-logo">Ian Alton</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="index.html#">Home</a></li>
+					<li><a href="index.html#about">About Me</a></li>
+					<li><a href="index.html#portfolio">Work Samples</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+				<ul class="side-nav" id="side-navigation">
+					<li>
+						<div class="user-view">
+							<div class="background">
+								<img src="on-the-trail.jpeg" class="responsive-img">
+							</div>
+							<a href="mailto:ipalton@gmail.com"><img class="circle" src="picture-of-me.png"></a>
+							<a href="mailto:ipalton@gmail.com"><span class="white-text name">Ian Alton</span></a>
+							<a href="mailto:ipalton@gmail.com"><span class="white-text email">ipalton@gmail.com</span></a>
+					</div>
+					</li>
+					<li class="close-sidebar-on-click"><a href="index.html#">Home</a></li>
+					<li class="close-sidebar-on-click"><a href="index.html#about">About Me</a></li>
+					<li class="close-sidebar-on-click"><a href="index.html#portfolio">Work Samples</a></li>
+					<li class="close-sidebar-on-click"><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="row">
+			<div class="col s12 hero blue darken-3">
+			</div>
+		</div>
+
+		<div class="row container hero-statement">
+			<div class="col s12 m12">
+				<div class="card horizontal hide-on-med-and-down">
+					<div class="card-image">
+						<img src="communications/communications-main.png">
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<h1>System Status Reporting</h1>
+							<p class="flow-text">The company lacked an effective way to communicate outages and planned maintenance to its customers. I implemented system status reporting into our website, products, and email service so our customers always had up-to-date info.</p>
+						</div>
+					</div>
+				</div>						
+						
+
+				<div class="card hide-on-large-only">
+					<div class="card-stacked">
+						<div class="card-image">
+								<img src="communications/communications-main.png">
+							</div>
+						<div class="card-content center-align">
+							<h1>System Status Reporting</h1>
+							<p class="flow-text">The company lacked an effective way to communicate outages and planned maintenance to its customers. I implemented system status reporting into our website, products, and email service so our customers always had up-to-date info.</p>
+						</div>
+						<!--<div class="card-action">
+							<a href="#">This is a link</a>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row container">
+			<div class="col s12">
+				<p>Please note that, due to a non-disclosure agreement, I am unable to provide real screenshots or specific information about some elements of this project.</p>
+				
+				<h1>The Problem</h1>
+
+				<p>The company was unable to communicate outages and maintenance to its customers.</p>
+
+				<ul class="browser-default">
+					<li>General communications depended on a CRM containing unreliable contact data. This made it difficult to reach the right audiences.</li>
+					<li>Targeted communications like push notifications required multiple writers, developers, and managers to complete a sequence of complex processes. This made it impossible to communicate with users quickly.</li>
+					<li>Communications systems were typically tied to other internal systems, so outages took communications offline, too.</li>
+					<li>The organization favored a strategy that avoided acknowledging service issues. It was concerned that communicating negative information would impact its image as a reliable, upscale solution.</li>
+				</ul>
+
+				<p>The end result was a spike in support calls during outages, customers who couldn't work, and frustration that there was no information about what was happening. Following an internal audit of the company's readiness for crisis management, the executive team asked me to take control of the company's external communications.</p>
+
+				<h1>The Solution</h1>
+
+				<p>While visiting London, I took notice of Transport for London's Status Updates. Travelers had a number of opportunities to learn of travel disruptions using the system of their choice. The TFL website, Twitter, email alerts, and even third-party routing tools like Google Maps informed commuters of disruptions as they happened. The robustness of this system left an impression on me.</p>
+
+				<h2>Requirements</h2>
+
+				<p>I reviewed the deficiencies identified in the internal audit and spoke at length with relevant stakeholders, including the customer support team, IT, and other managers. I determined several requirements that would allow the company to communicate freely.</p>
+
+				<ol class="browser-defaults">
+					<li><strong>Always Up</strong>. No matter what was down, communications had to be up.</li>
+					<li><strong>Effective</strong>. Communications had to reach the right people in the right contexts; we could not show irrelevant information to the wrong audience or put information places people wouldn't see it.</li>
+					<li><strong>Fast</strong>. We had to measure our response time in seconds or minutes, not hours or days.</li>
+					<li><strong>Easy</strong>. The process had to be so simple that one non-technical employee could coordinate communications.</li>
+					<li><strong>Single-Source</strong>. We needed one source of status information that could easily broadcast to any format or outlet.</li>
+				</ol>
+
+				<h2>Vendor Choice</h2>
+
+				<p>I rejected a home-grown solution. Creating a new system from scratch would have required significant upfront investments and technical resources for future maintenance, and external services were more likely to remain online during an outage. After research, I settled on a third-party system status service as the basis for our new communications network.</p>
+
+				<ul class="browser-default">
+					<li>It operated on a globally-distributed network and guaranteed uptime.</li>
+					<li>It had a simple web interface. Anyone could rapidly send communications from any location and device.</li>
+					<li>It had a robust API and built-in integrations, meaning we could integrate the system into the organization's email, social media, CRM, websites, and applications as we deemed it effective.</li>
+					<li>It could be automated, so communicators did not have to be on standby after-hours.</li>
+				</ul>
+
+				<h2>Implementation</h2>
+
+				<p>I implemented the API into the public website and support documentation myself, and created detailed specifications for our engineers so they could integrate the API into our existing products. I focused on an implementation that was contextually-sensitive, so outage information would only be seen in circumstances where it was appropriate or beneficial to the user in that moment.</p>
+
+				<p>The result was a tremendous improvement in our ability to communicate during outages and a reduction in support calls during outages.</p>
+
+			</div>
+		</div>
+
+		<div class="row container">
+			<div class="col s12 l6"><p>Communicators log in and create or update outages and maintenance using a simple form. The process takes less than a minute.</p></div>
+      		<div class="col s12 l6">
+      			<p class="caption">Filling out a form to add a new incident in the system.</p>
+      			<img src="communications/creating-status-incident.png" class="responsive-img border">
+      		</div>
+		</div>
+
+		<div class="row container">
+			<div class="col s12 l6">
+				<p>The status page on the company website is a central information hub that auto-reports the current status of all components and services. Outage notifications appear at the top of the page. If maintenance is scheduled, those events are also listed.</p>
+			</div>
+      		<div class="col s12 l6">
+      			<p class="caption">The company's status page showing an active incident and the status of each component.</p>
+      			<img src="communications/active-incident.png" class="responsive-img border">
+      		</div>
+		</div>
+
+		<div class="row container">
+			<div class="col s12 l6"><p>During outages and maintenance, details are automatically disseminated to products and the website in contextually relevant ways. In this example, the contact page directs user attention to a notice that the help desk is unexpectedly offline.</p></div>
+      		<div class="col s12 l6">
+      			<p class="caption">Outage information on a page that is relevant to the affected system.</p>
+      			<img src="communications/outage-contact-page.png" class="responsive-img border">
+      		</div>
+		</div>
+
+		<div class="row container">
+			<div class="col s12 l6"><p>Users can subscribe to email updates. Subscribers receive email updates any time there is a new issue or an update to an existing one. They can control which types of incidents will generate an email and can unsubscribe using a link in each email they receive.</p></div>
+      		<div class="col s12 l6">
+      			<p class="caption">A simple form to sign up for email updates.</p>
+      			<img src="communications/subscribe.png" class="responsive-img border">
+      		</div>
+		</div>
+
+		<div class="row container">
+			<div class="col s12">
+				<h1>Outcome and Legacy</h1>
+
+				<p>The system has had a number of successes, both technologically and culturally.</p>
+
+				<ul class="browser-default">
+					<li>It reduced time-to-notification during outages by about 95%.</li>
+					<li>It ended the organization's tendency to enter "panic" mode during outages and helped clarify responsibilities in these situations.</li>
+					<li>It reduced customer calls during outages and improved customer satisfaction. Customers are pleased when they discover they can look up status information, and express gratitude for our transparency in an industry that is notoriously secretive.</li>
+					<li>It improved the culture of communication within the organization. After the system's first use, it received universal praise for its simplicity and effectiveness.</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<footer class="page-footer blue darken-4">
+			<div class="container">
+				<div class="row">
+					<div class="col l4 s12">
+						<ul>
+							<li><a class="grey-text text-lighten-3" href="index.html#">Home</a></li>
+							<li><a class="grey-text text-lighten-3" href="index.html#about">About</a></li>
+							<li><a class="grey-text text-lighten-3" href="index.html#portfolio">Work Samples</a></li>
+							<li><a class="grey-text text-lighten-3" href="index.html#contact">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col l8 s12">
+						
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					<a href="https://twitter.com/ipalton"><i class="im im-twitter right"></i></a>
+					<a href="https://www.linkedin.com/in/ipalton/"><i class="im im-linkedin right"></i></a>
+				</div>
+			</div>
+		</footer>				
+						
+					
+
+
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script>
+			$(".button-collapse").sideNav({
+				menuWidth: 300, // Default is 300
+				edge: 'left', // Choose the horizontal origin
+				closeOnClick: false, // using custom function instead
+				draggable: true, // Choose whether you can drag to open on touch screens
+			});
+			$('.modal').modal();
+			$( ".close-sidebar-on-click" ).click(function() {
+				$('.button-collapse').sideNav('hide');
+			});
+		</script>
+	</body>
+	</html>
