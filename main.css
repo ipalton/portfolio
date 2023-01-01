@@ -1,6 +1,7 @@
 html {
 	font-size: 1em;
-	background-color: rgb(238,238,238);
+	background-color: #eaeaea;
+	color: #333333;
 }
 
 div.card-action {
@@ -36,10 +37,6 @@ p.progress-label {
 	display: inline;
 	margin:25px;
 }
-
-/*.hero-statement {
-	margin-bottom: 50px;
-}*/
 
 .hero { 
 	width:100%;
