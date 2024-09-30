@@ -3,7 +3,7 @@
 	<meta charset="UTF-8">
 	<head>
 		<META NAME="robots" CONTENT="noindex,nofollow">
-		<title>The right content for the right people - Ian Alton's Portfolio</title>
+		<title>Modernized developer content - Ian Alton's Portfolio</title>
 		<!--Import Icon Fonts-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
@@ -13,15 +13,6 @@
 
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113947172-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-113947172-1');
-		</script>
 	</head>
 
 	<body>
@@ -64,12 +55,12 @@
 			<div class="col s12 m12">
 				<div class="card horizontal hide-on-med-and-down">
 					<div class="card-image">
-						<img src="grc-help/help.png">
+						<img src="geolocation/help.png">
 					</div>
 					<div class="card-stacked">
 						<div class="card-content">
-							<h1>Modernizing developer documentation</h1>
-							<p class="flow-text">Migrating SDK and API documentation out of legacy PDFs and building a new online developer portal with totally reimagined technical documentation.</p>
+							<h1>Modernized developer documentation</h1>
+							<p class="flow-text">I implemented docs-as-code and built a developer portal with reimagined technical documentation, replacing low-performing, legacy PDFs.</p>
 						</div>
 					</div>
 				</div>						
@@ -78,11 +69,11 @@
 				<div class="card hide-on-large-only">
 					<div class="card-stacked">
 						<div class="card-image">
-								<img src="grc-help/help.png">
+								<img src="geolocation/help.png">
 							</div>
 						<div class="card-content center-align">
-							<h1>Modernizing developer documentation</h1>
-							<p class="flow-text">Migrating SDK and API documentation out of legacy PDFs and building a new online developer portal with totally reimagined technical documentation.</p>
+							<h1>Modernized developer documentation</h1>
+							<p class="flow-text">I implemented docs-as-code and built a developer portal with reimagined technical documentation, replacing low-performing, legacy PDFs.</p>
 						</div>
 					</div>
 				</div>
@@ -90,27 +81,21 @@
 		</div>
 
 		<div class="row container">
-			<div class="col s12">
+			<div class="col">
 
 				<h1>The problem</h1>
 
-				<p>A major provider of compliance-grade geolocation solutions and identity verification had a reputation for abysmal documentation.</p>
+				<p>A leader in location and identity technology struggled to explain how to build solutions with its products.</p>
 
 				<ul class="browser-default">
-					<li>All docs were PDFs. There were dozens of documents, delivered in a variety of ways, maintained by a variety of authors.</li>
-					<li>Docs were often out-of-date, technically incorrect, or simply confusing. The information in some documents conflicted with the information in others.</li>
-					<li>Despite being a solution for developers, there were few code samples and little direct instruction about what needed to be done.</li>
-					<li>Customers made the same implementation mistakes over and over, and virtually every one complained that the documentation was bad.</li>
-					<li>Competitors even cited the docs as one of their own competitive differentiators!</li>
+					<li><b>Wrong format</b>: Information was distributed in dozens of PDFs.</li>
+					<li><b>Low quality</b>: Instructions were contradictory and unclear. Few code samples existed. There was no starting point or goal.</li>
+					<li><b>Wasted time</b>: Implementations usually required months and multiple attempts. Most customers made the same mistakes and required substantial human support.</li>
+					<li><b>Reputational damage</b>: Customers regularly complained about documentation. Competitors cited its low quality in their marketing.</li>
+					<li><b>No technical writers</b>: The company did not have, and would not hire, a documentation team.</li>
 				</ul>
 
-				<p>I was hired to build the company's first technical documentation team, take ownership of the docs and the process, and help build a new, modern developer portal that our customers would love. Almost immediately, challenges mounted.</p>
-
-				<ul class="browser-default">
-					<li>After I started, I was informed that all technical writer hiring was canceled and would support a 300+ person product and engineering org alone.</li>
-					<li>The team earmarked to build the developer portal was either laid off or moved to other projects.</li>
-					<li>Repeated organizational changes cycled me through various directors, VPs and departments.</li>
-				</ul>
+				<p>I was brought in to build the company's first developer portal, write new documentation, and guide its engineering teams to maintain and improve their own content.</p>
 
 			</div>
 		</div>
@@ -119,47 +104,159 @@
 
 				<h1>The solution</h1>
 
-				<p>Text.</p>
+				<p>We implemented a comprehensive revision for all developer documentation.</p>
+
+				<ul class="browser-default">
+					<li><b>Docs-as-code</b>: Docs are written in MarkDown, versioned with Git, and tracked with Jira. Software development best practices, like peer review on pull requests, feel natural and improve documentation quality. Developers contribute using tools they already know.</li>
+					<li><b>CI/CD</b>: GitHub Actions automate builds and deployments.</li>
+					<li><b>Open source tech stack</b>: Built on Docusaurus and other open source tools, docs are static sites, ensuring speed and reliability while avoiding software costs and vendor lock-in.</li>
+					<li><b>Linting</b>: Content is linted in real time and on pull requests. This speeds up review, ensures style compliance, and improves writing quality.</li>
+					<li><b>Data-driven</b>: Our analytics tool equips us to monitor documentation performance with session replays and large-scale behavioral data.</li>
+					<li><b>Slack integration</b>: Integration between GitHub and Slack lets the relevant people know when content needs review or a site is deployed.</li>
+				</ul>
 
 			</div>
 		</div>
-
-		
-		<div class="row container">
-			<div class="col">
-				<h2>Title</h2>
-			</div>
-		</div>
-		<div class="row container">
-			<div class="col l6">
-
-				<p>Text.</p>
-
-			</div>
-			<div class="col l6">
-				<img src="grc-help/the-flow.png" style="width:100%;">
-			</div>
-		</div>
-
-		<div class="row container">
-			<div class="col s12">
-				<img src="grc-help/before-after.png" style="width:100%;">
-			</div>
-		</div>
-
-
-		
 
 		<div class="row container">
 			<div class="col">
-				<h2>What went well</h1>
+				<img src="geolocation/geolocation-site.png" style="width:100%;">
+
+				<p>Read on to learn how we arrived at this solution.</p>
+			</div>
+		</div>
+		
+		<div class="row container">
+			<div class="col">
+				<h2>Requirements gathering and planning</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col l12">
+
+				<p>Before work could begin, it was important I understand and document the nature of the problem and what kind of solution we needed.</p>
+
+				<ul class="browser-default">
+					<li><b>Education</b>: I learned what products the company sold and how they worked.</li>
+					<li><b>Stakeholder research</b>: I met with product managers and customer-facing teams to learn their perspectives on the organization's content challenges.</li>
+					<li><b>Customer research</b>: I gathered all known customer research and feedback relevant to the project.</li>
+					<li><b>Competitor analysis</b>: I read competitor documentation and learned how they positioned themselves.</li>
+					<li><b>Content inventory and audit</b>: I inventoried and audited existing documentation.</li>
+					<li><b>Report and strategy</b>: I created a report of everything wrong with the documentation and the processes and technology that generated it. Then, I produced a digestible, 5-point strategy so leaders and executives understood what we were doing.</li>
+				</ul>
+
+			</div>
+		</div>
+
+
+		<div class="row container">
+			<div class="col">
+				<h2>Vendor assessment</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col l12">
+
+				<p>The documentation tool we selected would define how documentation was written and distributed for years to come. It was important to fully evaluate options.</p>
+
+				<ul class="browser-default">
+					<li><b>Market research</b>: I looked at 25 common documentation tools. I inventoried their basic strengths and weaknesses, and noted which were worthy of further evaluation.</li>
+					<li><b>Shortlist</b>: We shortlisted 3 tools. I joined with one of our dev teams to build proofs of concept and evaluate them more deeply.</li>
+				</ul>
+
+				<p>In the end, we chose Docusaurus.</p>
+
+				<ol>
+					<li><b>Designed for documentation</b>: Documentaton-centric features and strong defaults allowed us start writing quickly.</li>
+					<li><b>Well supported</b>: Its community of users and well-written documentation were empowering.</li>
+					<li><b>Extensible</b>: Its plugins and extensibile design ensured we could aspire to almost anything.</li>
+					<li><b>Compatible</b>: Its React foundation allowed us to integrate it with the company's existing frontends, version control, and cloud services.</li>
+				</ol>
+
+				<p>This vendor assessment helped us defend our decisions when senior leaders later questioned our reliance on open-source tools. Our validation calmed their fears.</p>
+
+			</div>
+		</div>
+
+		<div class="row container">
+			<div class="col">
+				<h2>Building</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col l12">
+
+				<p>The company struggled to store and deploy documentation assets, so we needed to make our systems both powerful and simple.</p>
+
+				<ul class="browser-default">
+					<li><b>Design</b>: I worked with a Product Manager, UX designer, and front-end developer to design and implement the site's visual style.</li>
+					<li><b>Version control</b>: I set up a GitHub repo to version control our development environment. Since GitHub was already widely used, the transition for developers was easier.</li>
+					<li><b>Deployment</b>: I worked with the DevOps team to automate builds and deployments. We created staging and production environments and relied on GitHub Actions to do the heavy lifting.</li>
+					<li><b>Authentication</b>: There are distinct advantages to publicly available documentation, but the company was emphatic that its documentation be secured. I had to choose my battles carefully, so I worked with a frontend and backend developer to integrate the site into the main platform's identity service.</li>
+					<li><b>Monitoring</b>: We implemented the company's tool for event tracking and session replays, allowing us to monitor the documentation's performance over time in high-resolution.</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="row container">
+			<div class="col">
+				<h2>Writing</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col l12">
+
+				<p>Fixing the documentation's myriad issues meant rewriting significant amounts of content.</p>
+
+				<ul class="browser-default">
+					<li><b>Style guide</b>: Consistent style is important, but bespoke style guides are tedious and have low ROI. I accepted the Google Developer Style Guide because it was complete, easy to reference, and appropriate to the company's needs.</li>
+					<li><b>MVP definition</b>: I worked with the CTO, COO, and VP of Product to define a minimum viable product and delivery deadline. Our initial commitment was at the upper limit of what I was comfortable with, but we all agreed it was possible.</li>
+					<li><b>Team integration</b>: I introduced myself to the engineering teams I was supporting and walked through the project plan and MVP.</li>
+					<li><b>Information structure</b>: I mapped the structure and flow of the new documentation. This allowed for rapid rounds of iteration.</li>
+					<li><b>Task breakdown and estimation</b>: I broke the work into epics and tasks with user stories, acceptance criteria, and time estimations.</li>
+					<li><b>Peer review</b>: As I completed each component of the documentation, I submitted a pull request to the engineering team. I made adjustments as needed and, once each PR was approved, I merged the docs into the main branch.</li>
+				</ul>
+
+				<p>Since my colleagues were located on the other side of the world, asynchronous collaboration was key. I was able to move multiple facets of the project forward simultaneously, then allow engineering teams to review PRs and submit feedback overnight.</p>
+
+			</div>
+		</div>
+
+		<div class="row container">
+			<div class="col">
+				<h2>Enablement</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col l12">
+
+				<p>We hadn't just built a new tech stack. We had changed the entire philosophy around what documentation was and how it was to be governed. Education and adoption were the final keys to success.</p>
+
+				<ul class="browser-default">
+					
+					<li><b>Technical writing handbook</b>: I documented the new values, objectives, and methods for writing documentation at the company. This handbook contained a 1-week onboarding course, a mix of self-driven learning and classroom time.</li>
+					<li><b>Onboarding sessions</b>: I met individually with each engineering team, guiding them to take ownership of their own documentation.</li>
+					<li><b>Content linting</b>: Many of the developers who would contribute to this repo had little experience writing documentation and following style guides. Real-time guidance and automated checks on their PRs helped them avoid errors.</li>
+				</ul>
+			</div>
+		</div>
+		
+
+		<div class="row container">
+			<div class="col">
+				<h2>What went well</h2>
 			</div>
 		</div>
 		<div class="row container">
 			<div class="col">
 
 				<ul class="browser-default">
-					<li>Hi.</li>
+					<li><b>Perfect execution</b>: We met virtually all initial objectives and timelines, and presented our MVP inside 5 months.</li>
+					<li><b>Cost</b>: The project had virtually no software or service costs beyond the nominal costs to build and serve the developer portal.</li>
+					<li><b>Reliability</b>: We experienced no production incidents or downtime.</li>
+					<li><b>Easy to learn</b>: Developers adoped the system and began producing their own content almost immediately.</li>
+					<li><b>Source of truth</b>: With a real source of truth, we could begin the sunset process for the collection of legacy sites, systems, and processes the company had relied on to disseminate documentation.</li>
 				</ul>
 			</div>
 		</div>
@@ -175,8 +272,24 @@
 
 				<ul class="browser-default">
 
-					<li>Hi.</li>
+					<li><b>Layoffs</b>: Layoffs and reorganizatons battered the product, engineering, and senior leadership teams. I cycled through multiple managers and project sponsors. Each time, we had to reset expectations and negotiate priorities.</li>
+					<li><b>Changing goalposts</b>: The initial project sponsors agreed to ship an MVP followed by rapid iterations, but they soon left the company. Later leadership insisted on finishing everything before shipping. We missed out on valuable data that could have helped us produce a better result sooner.</li>
+				</ul>
+			</div>
+		</div>
 
+
+		<div class="row container">
+			<div class="col">
+				<h2>Key takeaways</h2>
+			</div>
+		</div>
+		<div class="row container">
+			<div class="col">
+				<ul class="browser-default">
+					<li><b>"It's getting better, growing stronger"</b>: Shipping isn't the end of a project. In many ways, it's the beginning. Session replays, customer feedback, behavioral data, and support metrics will reveal more about how this project has changed the developer experience.</li>
+					<li><b>"You've gotta fight for your right to party"</b>: Organizations <a href="https://medium.com/@itsian/measuring-the-maturity-of-your-technical-documentation-434caa7529bd">do not intrinsically value documentation</a>. In organizations with low content maturity, product designers and content creators must be patient and lobby leadership to think differently about what it means to support customers. Operational maturity is a cultural change that evolves over time.</li>
+					<li><b>"Don't stop thinkin' about tomorrow"</b>: Attrition may sap the strength of technology teams, but focused professionals with a will to succeed can still drive tough projects to completion and deliver value for customers.</li>
 				</ul>
 			</div>
 		</div>
